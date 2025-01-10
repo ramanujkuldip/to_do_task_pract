@@ -63,4 +63,6 @@ Digiwagon Company Flutter Assignment
       2. Sqflit: Used for storing larger datasets like task lists, or other complex data that require more
             structured storage.
 
+--> Please refer to the attached video, 'app_demo_video.mp4', for the demo.
+
 Thank you! Regards

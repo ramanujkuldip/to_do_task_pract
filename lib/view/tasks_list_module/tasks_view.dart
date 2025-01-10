@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:uuid/uuid.dart';
 
 import '../../constants/constants.dart';
 import '../../constants/enums.dart';
@@ -469,8 +470,10 @@ class TasksListView extends StatelessWidget {
                     return;
                   }
 
+                  Uuid uuid = const Uuid();
                   final task = TaskModel(
                     id: taskData?.id,
+                    uuid: uuid.v4(),
                     taskName: controller.taskNameDialogController.text.trim(),
                     description:
                         controller.descriptionDialogController.text.trim(),

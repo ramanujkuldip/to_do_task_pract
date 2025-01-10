@@ -103,8 +103,8 @@ class TasksController extends GetxController {
   }
 
   deleteTask(TaskModel task) {
-    DatabaseHelper.instance.deleteTask(task.id!);
-    tasksList.removeWhere((element) => element.id == task.id);
+    DatabaseHelper.instance.deleteTask(task.uuid!);
+    tasksList.removeWhere((element) => element.uuid == task.uuid);
   }
 
   changeTheme() {

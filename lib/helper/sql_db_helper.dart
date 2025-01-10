@@ -24,6 +24,7 @@ class DatabaseHelper {
     return db.execute('''CREATE TABLE task_table (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
     taskName TEXT NOT NULL,
+    uuid TEXT NOT NULL,
     isCompleted INTEGER NOT NULL DEFAULT 0,
     description TEXT,
     createdAt int,
@@ -47,8 +48,8 @@ class DatabaseHelper {
     return await db.update('task_table', task.toMap(), where: 'id = ?', whereArgs: [task.id]);
   }
 
-  Future<int> deleteTask(int id) async {
+  Future<int> deleteTask(String id) async {
     Database db = await instance.db;
-    return await db.delete('task_table', where: 'id = ?', whereArgs: [id]);
+    return await db.delete('task_table', where: 'uuid = ?', whereArgs: [id]);
   }
 }

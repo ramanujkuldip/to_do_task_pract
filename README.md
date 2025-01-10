@@ -55,7 +55,7 @@ Digiwagon Company Flutter Assignment
             It allows you to easily maintain and update data, automatically reflecting changes in the UI when the data changes.
 
 
-   -> I have have used two database libraries Hive and Sqflite.
+   -> I have used two database libraries Hive and Sqflite.
 
       1. Hive: Used for storing small data like user preferences or settings (e.g., username, theme, or task
             sorting orders).
@@ -64,5 +64,6 @@ Digiwagon Company Flutter Assignment
             structured storage.
 
 --> Please refer to the attached video, 'app_demo_video.mp4', for the demo.
+--> If the app is not running on your system then use the attached APK release build
 
 Thank you! Regards
